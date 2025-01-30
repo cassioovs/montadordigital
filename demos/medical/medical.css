@@ -2,21 +2,64 @@
     Crafto - Medical
 ====================================== */
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
 /* variable */
 :root {     
-    --base-color: #18bcc7;  
-    --alt-font: 'Manrope', sans-serif; 
-    --primary-font: 'Manrope', sans-serif;
+    --base-color: #ffCC19;  
+    --alt-font: 'Cabin', sans-serif; 
+    --primary-font: 'Cabin', sans-serif;
     --dark-gray: #303334;
     --red: #f45959;
     --medium-light-gray:#b4b4b4;
     --medium-gray:#848587;
 }
-/* box layout */
-.box-layout {
-    padding: 0 100px;
+
+/* INÍCIO BOTÕES YOUTUBE */ 
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    cursor: pointer; /* Indica que é clicável */
 }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* FIM BOTÕES YOUTUBE */ 
+/* RESPONSIVIDADE YOUTUBE */
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .video-container {
+        padding-bottom: 75%; /* Aumenta a altura para evitar cortes */
+    }
+
+    .row.align-items-center {
+        padding-top: 20px; /* Adiciona espaço acima do título */
+    }
+
+    h2.text-white {
+        font-size: 1.5rem; /* Ajusta o tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        padding-bottom: 100%; /* Altura ainda maior para telas pequenas */
+    }
+
+    h2.text-white {
+        font-size: 1.25rem; /* Tamanho menor para o título */
+    }
+}
+/* FIM RESPONSIVIDADE YOUTUBE */
+
 body{
     font-size: 17px;
     line-height: 30px;
@@ -39,7 +82,7 @@ header .navbar-brand img {
 }
 /* bg color */
 .bg-light-turquoise-blue {
-    background-color: #edf9fa;
+    background-color: #212529;
 }
 .bg-light-sea-green-transparent {
     background-color: rgba(22, 193, 204,0.8);
@@ -131,7 +174,7 @@ header .navbar-brand img {
 }
 /* footer */
 footer .nav-link {
-    color: var(--white);
+    color: #fff;
 }
 .elements-social .light li a:hover {
     color: var(--base-color) !important;
