@@ -1420,8 +1420,6 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   left: 0px;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: all 400ms cubic-bezier(0.5, 1, 0.89, 1);
   transition: all 400ms cubic-bezier(0.5, 1, 0.89, 1);
 }
@@ -3281,7 +3279,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   background-color: var(--light-majorelle-blue);
 }
 .bg-majorelle-blue {
-  background-color: var(--majorelle-blue);
+  background-color: #ffcc19;
 }
 .bg-spring-wood {
   background-color: var(--spring-wood);
@@ -13694,8 +13692,6 @@ canvas {
   transition: 0.4s;
 }
 .process-step-style-03 .process-step-icon-box .number {
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   top: 55%;
