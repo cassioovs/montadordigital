@@ -19978,19 +19978,19 @@
     max-height: calc(100vh - 72px);
   }
   .header-icon .icon > a {
-    color: var(--dark-gray);
+    color: #fff;
     padding-left: 12px;
   }
   .header-icon .icon > a:hover {
-    color: var(--dark-gray);
+    color: #ffCC19;
     opacity: 1;
   }
   .header-icon .icon .header-cart > a, .header-icon .icon .header-language > a {
-    color: var(--dark-gray);
+    color: #fff;
     padding-left: 12px;
   }
   .header-icon .icon .header-cart > a:hover, .header-icon .icon .header-language > a:hover {
-    color: var(--dark-gray);
+    color: #fff;
     opacity: 1;
   }
   .center-logo .menu-logo {

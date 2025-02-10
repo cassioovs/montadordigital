@@ -26,6 +26,7 @@
   font-variant: normal;
   line-height: 1;
   text-rendering: auto;
+  padding: 2px;
 }
 
 .fas,
@@ -39,6 +40,7 @@
 .fab,
 .fa-brands {
   font-family: "Font Awesome 6 Brands";
+  padding: 2px;
 }
 
 .fa-1x {

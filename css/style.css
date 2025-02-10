@@ -7059,6 +7059,8 @@ header .header-top-bar .widget i {
 }
 header .header-top-bar .header-icon .header-social-icon {
   top: 0;
+  padding: 5px;
+  
 }
 header .header-top-bar .header-icon .header-social-icon ul {
   list-style: none;

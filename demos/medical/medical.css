@@ -250,7 +250,7 @@ footer .elements-social ul li:last-child {
         padding: 0 4px;
     }
     header .navbar [class*=col-] {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 }
 @media (max-width: 767px){
