@@ -100,10 +100,6 @@ body {
   word-break: break-word;
   -webkit-font-smoothing: antialiased;
 }
-section {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
 section.half-section {
   padding-top: 70px;
   padding-bottom: 70px;
