@@ -3849,7 +3849,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   width: 170px !important;
 }
 .w-180px {
-  width: 180px !important;
+  width: 90px !important;
 }
 .w-190px {
   width: 190px !important;
@@ -4137,7 +4137,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   height: 170px !important;
 }
 .h-180px {
-  height: 180px !important;
+  height: 90px !important;
 }
 .h-190px {
   height: 190px !important;
