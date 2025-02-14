@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 /* variable */
 :root {     
-    --base-color: #1B3250;
+    --base-color: #ffcf19;
     --dark-gray: #16202c;
     --medium-gray: #888e95;
     --alt-font: 'Plus Jakarta Sans', sans-serif;
@@ -67,9 +67,6 @@ input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-pl
     font-size: 15px;
 }
 /* header */
-header .navbar-brand img {
-    max-height: 36px;
-}
 .header-cart-icon .cart-count {
     font-size: 9px;
     right: -10px;
@@ -133,8 +130,8 @@ h4 {
     color: var(--dark-gray);
 }
 section, footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 1px;
 }
 /* btn */
 .btn.btn-switch-text.btn-very-small > span {
@@ -217,7 +214,7 @@ footer .footer-logo img {
     max-height: 36px;
 }
 .footer-dark a:hover {
-    color: var(--white);
+    color: #ffcf19 !important;
 }
 .newsletter-style-02 input {
     font-size: 14px;
@@ -249,10 +246,7 @@ footer ul li {
     }
 }
 @media (max-width: 991px) {
-    section, footer {
-        padding-top: 75px;
-        padding-bottom: 75px;
-    }
+
     .tab-style-04 .nav-tabs .nav-item {
         padding: 0 20px;
     }
@@ -270,7 +264,6 @@ footer ul li {
 @media (max-width: 767px) {
     section, footer {
         padding-top: 50px;
-        padding-bottom: 50px;
     }
     .tab-style-04 .nav-tabs .nav-item .nav-link {
         line-height: 35px;

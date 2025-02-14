@@ -97,8 +97,8 @@
   --bs-link-color: #0d6efd;
   --bs-link-color-rgb: 13, 110, 253;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #0a58ca;
-  --bs-link-hover-color-rgb: 10, 88, 202;
+  --bs-link-hover-color: #ffcf19;
+  --bs-link-hover-color-rgb: #ffcf19;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
@@ -9173,7 +9173,6 @@ textarea.form-control-lg {
 
 .bg-transparent {
   --bs-bg-opacity: 1;
-  background-color: transparent !important;
 }
 
 .bg-body-secondary {
