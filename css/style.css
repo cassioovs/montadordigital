@@ -136,6 +136,8 @@ section.extra-big-section {
 img {
   max-width: 100%;
   height: auto;
+  height: 40px;
+
 }
 ul li {
   list-style: none;
@@ -19260,7 +19262,7 @@ footer.big-footer {
   padding-bottom: 140px;
 }
 footer .footer-logo img {
-  max-height: 30px;
+  max-width: 100%;
 }
 footer ul {
   padding: 0;

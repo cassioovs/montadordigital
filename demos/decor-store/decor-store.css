@@ -12,6 +12,10 @@
     --primary-font: 'Plus Jakarta Sans', sans-serif;
 } 
 /* reset */
+header.sticky.sticky-active .header-reverse.header-dark.glass-effect {
+    background-color: rgba(13, 21, 23, .6) !important;
+}
+
 body {
     font-size: 16px;
     line-height: 30px;
@@ -209,9 +213,6 @@ section, footer {
 footer {
     font-size: 15px;
     line-height: 26px;
-}
-footer .footer-logo img {
-    max-height: 36px;
 }
 .footer-dark a:hover {
     color: #ffcf19 !important;
