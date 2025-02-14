@@ -845,7 +845,7 @@ b, strong {
   font-size: 50px;
 }
 .icon-large {
-  font-size: 42px;
+  font-size: 35px;
 }
 .icon-medium {
   font-size: 34px;
@@ -2993,7 +2993,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   mix-blend-mode: inherit;
 }
 .scroll-progress.scroll-simple .scroll-top {
-  background: var(--white);
+  background: #fff;
   font-size: 17px;
   line-height: 34px;
   box-shadow: 0 0 25px rgba(23, 23, 23, 0.25);
@@ -3373,7 +3373,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 }
 /* Transparent background color */
 .bg-transparent {
-  background-color: #0000008f
+  background-color: #000000ba
 }
 .bg-gradient-fast-blue-purple-transparent {
   background-image: linear-gradient(to right top, rgb(42, 70, 244), rgba(95, 66, 249, 0.9), rgba(131, 60, 252, 0.9), rgba(162, 51, 254, 0.9), rgba(191, 37, 255, 0.9));
@@ -7026,7 +7026,7 @@ header .navbar.mini-header .navbar-brand {
   padding: 20px 0;
 }
 header .navbar.mini-header .navbar-brand img {
-  max-height: 22px;
+  max-height: 40px;
 }
 header .navbar-brand {
   margin-right: 0;
@@ -7046,7 +7046,7 @@ header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  max-height: 36px;
 }
 header .header-top-bar {
   position: fixed;
