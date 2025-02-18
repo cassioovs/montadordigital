@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="css/icon.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/medical/medical.css" />
         <link rel="stylesheet" href="demos/decor-store/decor-store.css" />
+
 
         <!-- Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -40,11 +40,12 @@
     <div> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <a href="https://wa.me/5519983527288?text=Olá Marcelo%2C vim por meio do site www.montadordigital.com.br%2C gostaria de um orçamento" class="whatsapp pulsating-button" target="_blank"> <i class="fa fa-whatsapp my-float"></i> </a> </div>
 
     <body data-mobile-nav-style="full-screen-menu"  data-mobile-nav-bg-color="#232323">
+        
         <div class="box-layout">  
             <!-- start header -->
             <header> 
                 <!-- start navigation -->
-                <nav class="navbar navbar-expand-lg header-light bg-white  header-transparent header-reverse"
+                <nav class="navbar navbar-expand-lg  bg-transparent header-reverse glass-effect border-bottom border-color-light-medium-gray-white-light" data-header-hover="black">
                     <div class="container-fluid">
                         <div class="col-auto col-lg-2 me-lg-0 me-auto">
                             <a class="navbar-brand" href="">
@@ -53,14 +54,10 @@
                                 <img src="images/android-chrome-512x512.png" data-at2x="images/android-chrome-512x512.png" alt="" class="mobile-logo"> 
                             </a>
                         </div>
-                        <div style="padding-right: 5%;">
-                            <a href="https://www.youtube.com/@agoramontador" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank"><i class="fa-brands fa-google"></i></a>
-                            <a href="https://www.instagram.com/montadordigital//montadordigital/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                       
-                        </div> 
+                 
                         <div class="col-auto col-lg-8 menu-order position-static">
-                            <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-line"></span>
                                 <span class="navbar-toggler-line"></span>
                                 <span class="navbar-toggler-line"></span>
@@ -71,11 +68,13 @@
                                     <li class="nav-item"><a href="homologacao.html" class="nav-link">Início</a></li>
                                     <li class="nav-item"><a href="" class="nav-link">Orçamentos</a></li>
                                     <li class="nav-item"><a href="" class="nav-link">Serviços</a></li>
-                                    <li class="nav-item blink-effect"><a href="" class="nav-link ">Montadores Profissionais</a></li>
+                                    <li class="nav-item montadores-effect"><a href="" class="nav-link">Montadores Profissionais</a></li>
                                     <li class="nav-item"><a href="" class="nav-link">Nossa História</a></li> 
                                     <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-                               </ul>
+                                </ul>
                             </div>
+                            
+                            
                             
                         </div>
                     </div>
@@ -83,6 +82,8 @@
                 
                 <!-- end navigation -->
             </header>
+
+
            <!-- start page title -->
 <section class="page-title-parallax-background half-section ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url(./images/FotoHeader2Test.jpg)">
     
@@ -118,6 +119,23 @@
                 allowfullscreen>
             </iframe>
         </div>
+        <!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+<!-- jQuery (Necessário para Magnific Popup) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Magnific Popup JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+      $('.popup-youtube').magnificPopup({
+          type: 'iframe'
+      });
+  });
+</script>
+<!-- end page title -->
         <div class="bg-base-color bottom-0px w-100 pt-30px pb-30px">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -151,6 +169,10 @@
             </div>
         </div>
     </section>
+    
+     <!-- start section -->
+    
+    <!-- end section -->
     <!-- SCRIPT API YOUTUBE, RODAR AUTOPLAY E AFINS DE BOAS -->
     <script>
         var player;
@@ -291,248 +313,18 @@
 
     
     
-            <!-- start section -->
-        <section class="bg-solitude-blue">
-            <div class="container">
-                <div class="row justify-content-center mb-4">
-                    <div class="col-xl-7 col-lg-9 col-md-10 text-center">
-                        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>Serviços</h3>
-                    </div>
-                </div>
-                
-                <div class="row align-items-center" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 150, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="col-xl-3 col-lg-4 col-md-12 tab-style-05 md-mb-30px sm-mb-20px">
-                        <!-- start tab navigation -->
-                        <ul class="nav nav-tabs justify-content-center border-0 text-left fw-500 fs-18 alt-font">
-                            <li class="nav-item"><a data-bs-toggle="tab" href="" class="nav-link d-flex align-items-center active"><i class="feather icon-feather-briefcase icon-extra-medium text-dark-gray"></i><span>Serviços 1</span></a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href=""><i class="feather icon-feather-edit icon-extra-medium text-dark-gray"></i><span>Serviços 2</span></a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href=""><i class="feather icon-feather-compass icon-extra-medium text-dark-gray"></i><span>Serviços 3</span></a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href=""><i class="feather icon-feather-globe icon-extra-medium text-dark-gray"></i><span>Serviços 4</span></a></li>
-                        </ul>
-                        <!-- end tab navigation -->
-                    </div>
-                    <div class="col-xl-9 col-lg-8 col-md-12">
-                        <div class="tab-content">
-                            <!-- start tab content -->
-                            <div class="tab-pane fade in active show" id="tab_four1">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 offset-xl-1 sm-mb-30px">
-                                        <img src="https://craftohtml.themezaa.com/images/demo-business-tab-01.jpg" alt="" class="border-radius-6px w-100" />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-                            <!-- start tab content -->
-                            <div class="tab-pane fade in" id="tab_four2">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 offset-xl-1 sm-mb-30px">
-                                        <img src="https://craftohtml.themezaa.com/images/demo-business-tab-01.jpg" alt="" class="border-radius-6px w-100" />
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 offset-xl-1 text-center text-md-start">
-                                        <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-edit fs-22"></i></span>Maximize seu tempo</span>
-                                        <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px"><span class="fw-600">Orçamento Rápido</span></h5>
-                                        <p>De forma rápida e prática pelo WhatsApp, sem burocracia.</p>
-                                        <a href="" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Solicitar orçamento</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-                            <!-- start tab content -->
-                            <div class="tab-pane fade in" id="tab_four3">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 offset-xl-1 sm-mb-30px">
-                                        <img src="https://craftohtml.themezaa.com/images/demo-business-tab-01.jpg" alt="" class="border-radius-6px w-100" />
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 offset-xl-1 text-center text-md-start">
-                                        <span class="fs-18 fw-600 text-base-color mb-25px d-flex align-items-center justify-content-center justify-content-md-start"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-white box-shadow-medium-bottom align-middle me-15px flex-shrink-0"><i class="feather icon-feather-compass fs-22"></i></span>Agilidade e Garantia</span>
-                                        <h5 class="alt-font text-dark-gray mb-20px fw-500 ls-minus-1px"><span class="fw-600">Profissionais especializados</span></h5>
-                                        <p>Eu, ou um de meus profissionais especializados, realizaremos a montagem ou instalação com todo o cuidado, atenção aos detalhes e segurança</p>
-                                        <a href="" class="btn btn-large btn-box-shadow btn-rounded btn-base-color mt-10px">Procurar profissionais</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-                        
-                             
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
             <!-- end section -->
             <!-- start section --> 
           
-            </section>
+        
             <!-- end section -->
               <!-- start section -->
      
-        <!-- end section -->
-        <section class="bg-solitude-blue">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">                    
-        
-                    <div class="col-xl-5 col-lg-6 offset-xl-2 position-relative">
-                        <div class="accordion pricing-table-style-04" id="accordion-style-01" data-active-icon="fa-angle-up" data-inactive-icon="fa-angle-down" data-anime='{"el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <!-- start accordion item -->
-                            <div class="accordion-item bg-white active-accordion box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-01" aria-expanded="true" data-bs-parent="#accordion-style-01"> 
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Montagem<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-up"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Montamos móveis novos comprados pela internet ou em lojas de qualquer modelo e fabricante, direto da caixa para o conforto do seu lar. Montamos também móveis usados.</p>
-                                
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                            <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Desmontagem<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01-02">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                            <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-03" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Assistência Técnica<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01-03">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Suporte para Televisão<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01-04">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Sofás<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01-05">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Instalações<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Reduções/Adaptação<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Modulares<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Corporativo<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                              <!-- start accordion item -->
-                            <div class="accordion-item bg-white box-shadow-quadruple-large mb-20px">
-                                <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-01-02" aria-expanded="false" data-bs-parent="#accordion-style-01">
-                                        <div class="accordion-title position-relative d-flex align-items-center pe-20px text-dark-gray fw-500 mb-0 alt-font">Feiras/Showroom<span class="icon-round bg-dark-gray text-white w-25px h-25px"><i class="fa-solid fa-angle-down"></i></span></div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-01">
-                                    <div class="accordion-body last-paragraph-no-margin">
-                                        <p class="opacity-6 w-90 fw-300">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-            
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- start section -->
-         <!-- start section -->
+      
 <!-- start section -->
-<section class="bg-solitude-blue">
+<section class="bg-very-light-gray">
     <div class="container">
+        <br>
         <div class="row justify-content-center align-items-center" data-anime='{ "el": "childs", "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
             <div class="col-4 col-lg-2 col-sm-3 xs-mb-25px">
                 <div class="swiper rounded-circle" data-slider-options='{ "slidesPerView": 1, "loop": true, "autoplay": { "delay": 1000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
@@ -586,7 +378,7 @@
                 </div>
             </div>
             <div class="col-lg-5 col-xl-4 col-md-6 col-sm-7 text-center text-sm-start">
-                <h5 class="alt-font text-dark-gray lh-40 fw-500 ls-minus-1px mb-0 ms-10px lg-ms-0" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>Mais de <span class="fw-700 text-base-color">2,000</span> clientes felizes!</h5>
+                <h5 class="alt-font text-balh-40 fw-500 ls-minus-1px mb-0 ms-10px lg-ms-0" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>Mais de <span class="fw-700 text-base-color">2,000</span> clientes felizes!</h5>
             </div>
             <div class="col-lg-2 col-sm-4 ps-40px md-ps-15px md-mt-35px text-center text-lg-start">
                 <h2 class="alt-font text-dark-gray fw-700 ls-minus-3px mb-5px" data-anime='{ "translateY": [15, 0], "opacity": [0,1], "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>5</h2>
@@ -599,7 +391,7 @@
         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mt-4 sm-mt-40px">
             <!-- start testimonials item -->
             <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
+                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
                     <span>"Contratei os serviços do Marcelo devido às ótimas avaliações no Google. Atendimento excelente!"</span>
                 </div>
                 <div class="mt-10px pt-20px pb-20px">
@@ -608,7 +400,7 @@
                     </a>
                     <div class="d-inline-block align-middle lh-20">
                         <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Patricia Silvestre Watanabe</a>
+                            <span  class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Patricia Silvestre Watanabe</span>
                         </div>
                         <span class="fs-15">Google Avaliações</span>
                     </div>
@@ -617,7 +409,7 @@
             <!-- end testimonials item -->                            
             <!-- start testimonials item -->
             <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
+                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
                     <span>"Contratei os serviços do Marcelo devido às ótimas avaliações no Google. Fiz uma pesquisa e também foi o melhor custo/benefício.
                         O atendimento foi excelente e muito rápido, os móveis ficaram muito bem montados, contratarei em outras oportunidades, com certeza"</span>
                 </div>
@@ -627,14 +419,14 @@
                     </a>
                     <div class="d-inline-block align-middle lh-20">
                         <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Graziela Mingati</a>
+                            <span class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Graziela Mingati</span>
                         </div>
                         <span class="fs-15">Google Avaliações</span>
                     </div>
                 </div>
             </div>
             <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
+                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
                     <span>"O Marcelo é um ótimo profissional no que faz e também uma pessoa de bom coração.
                         Ele se preocupa e toma cuidado com o móvel e com detalhes na casa (arranhão no piso, sujeira na parede e etc). Sempre muito educado e pontual.
                         Já contratei o serviço dele mais de uma vez e indico sempre pq confio no trabalho e na pessoa.
@@ -646,11 +438,12 @@
                     </a>
                     <div class="d-inline-block align-middle lh-20">
                         <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Gabi</a>
+                            <span class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Gabi</span>
                         </div>
                         <span class="fs-15">Google Avaliações</span>
                     </div>
                 </div>
+                <br>
             </div>
             <!-- end testimonials item -->
         </div>
@@ -670,120 +463,363 @@
                 </div>
             </div>
         </section>
-         <!-- start section -->
-         <section class="pt-0 pb-60px  position-relative bg-dark-slate-blue" >
-            <div class="container-fluid p-0">
+       <!-- Início da Seção -->
+
+
+
+        <section class ="accordion-style-06 accordion-item ">
+            <div class="container cover-background ">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 md-mb-50px appear" data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;rl&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}" style="position: relative;">
+                        <figure class="position-relative m-0 md-w-90" style="opacity: 1;">
+                            <img src="./images/faq.jpg" class="w-90 border-radius-6px" alt="" data-no-retina="">
+                            <figcaption class="position-absolute bg-dark-gray border-radius-8px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px right-minus-30px w-230px xs-w-210px text-center last-paragraph-no-margin">
+                                <div class="bg-white pt-35px pb-35px border-radius-6px mb-10px">
+                                    <h1 class="fw-700 ls-minus-2px mb-0" style="color: #fff;">5</h1>
+                                    <div class="text-golden-yellow fs-18 ls-1px mb-5px">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="d-block fw-600 ls-minus-05px" style="color: #fff;">3000+ Atendimentos </span>
+                                    <div class="d-inline-block fs-11 text-uppercase bg-green ps-20px pe-20px lh-30 fw-600 text-white border-radius-100px box-shadow-large">Nota excelente</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 appear anime-child anime-complete border-radius-6px cover-background" 
+     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+    
+    <!-- Centraliza os textos principais -->
+    <div class="text-center">
+        <div class="mb-20px md-mb-15px">
+            <div class="separator-line-5px w-50px bg-base-color d-inline-block align-middle me-10px"></div>
+            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20">Tem alguma dúvida?</span>
+        </div>
+        <h3 class="fw-700 text-dark-gray ls-minus-2px sm-ls-minus-1px w-90 lg-w-100">Respostas Rápidas</h3>
+        <a href="faq.html" class="btn-highlight">Acessar Central de Ajuda</a>
+    </div>
+
+    <!-- Espaçamento -->
+    <br>
+
+    <!-- Lista alinhada à esquerda -->
+    <ul class="text-start">
+        <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ">O que você vai encontrar: </span>
+        <br>
+        <br>
+        <li>Perguntas Frequentes</li>
+        <li>Pagamentos e Garantia</li>
+        <li>Dúvidas de Montadores</li>
+        <br>
+        <span class="fw-bold text-dark-gray">E muito mais! 😉</span>
+    </ul>
+
+    <!-- Ênfase no final -->
+  
+
+</div>
+
                 <br>
-                <div class="row mb-3">
-                    <div class="col-12 text-center">
-                        <span class="ls-2px text-uppercase text-dark-gray fw-500 lh-22 mb-15px d-block"><br>Siga-me no <span class="d-inline-block border-2 border-bottom border-color-transparent-base-color fw-800">Instagram </span></span>
+            </div>
+        </section>
+
+<!-- Início da Seção -->
+<section class="bg-very-light-gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="fw-700 text-dark-gray ls-minus-2px sm-ls-minus-1px w-90 lg-w-100">Acompanhe os Conteúdos</h2>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <div class="instagram-follow-api swiper">
+                    <div class="swiper-wrapper instafeed-grid instafeed-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb1.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>
+                            
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb2.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>
+                            
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb3.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>
+                            
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb4.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>                            
+                        </div>
+                          <!-- Slide 4 -->
+                          <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb5.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>                            
+                        </div>
+                          <!-- Slide 4 -->
+                          <div class="swiper-slide">
+                            <figure class="d-flex align-items-center justify-content-center">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">
+                                    <img src="./images/Instagram/thumb6.jpg" class="insta-image" alt="Post Instagram 1" />
+                                    <span class="insta-icon"><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </figure>                            
+                        </div>
+                       
+
+                        <!-- Adicione mais imagens conforme necessário -->
+
+                    </div>
+
+                    <!-- Botão para seguir no Instagram -->
+                    <div class="absolute-middle-center z-index-1">
+                        <a href="https://www.instagram.com/montadordigital" target="_blank" class="btn-instagram">
+                            <i class="fa-brands fa-instagram"></i> @montadordigital
+                        </a>
+                    </div>
+
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Botões de navegação -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Swiper.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".instagram-follow-api", {
+            loop: false,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoplay: { delay: 2500, disableOnInteraction: false },
+            keyboard: { enabled: true, onlyInViewport: true },
+            pagination: { el: ".swiper-pagination", clickable: true, dynamicBullets: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            breakpoints: {
+                1200: { slidesPerView: 6 },
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                480: { slidesPerView: 1 }
+            }
+        });
+    });
+</script>
+
+<!-- Estilos adicionais para responsividade -->
+
+
+
+
+        <!-- end section -->
+   
+  <!-- start footer -->
+             
+  <footer class=" sm-pt-40px footer-dark bg-extra-medium-slate-blue" style="background-image: url(images/demo-footer-pattern.svg)"> 
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- start footer column -->
+            <div class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-left text-sm-start">
+                <div class="logo-wrapper d-flex align-items-center justify-content-center ">
+                    <a href="" class="footer-logo d-block"><img src="images/android-chrome-512x512.png" data-at2x="images/android-chrome-512x512.png" alt="Logo"></a>
+                </div>
+                <p class="sm-w-100 d-inline-block" >
+                    <br>
+                    Montagem de móveis com cuidado, qualidade e montadores qualificados.<br><br>Garantimos sua satisfação e uma experiência impecável para seu estabelecimento!<br><br></p>
+                    <div class="d-flex flex-wrap justify-content-center  gap-4">
+                        <div class="feature-box d-flex align-items-left gap-2">
+                            <div class="elements-social">
+                                <a href="https://www.facebook.com/agoramontadoroficial/" target="_blank"><i class="fa-brands fa-facebook icon-large text-white"></i></a>
+                            </div>
+                            <div class="feature-box-content">
+                                <a href="https://www.facebook.com/agoramontadoroficial/" target="_blank">Facebook</a>
+                            </div>
+                        </div>
+                    
+                        <div class="feature-box d-flex align-items-center gap-2">
+                            <div class="elements-social">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank"><i class="fa-brands fa-instagram icon-large text-white"></i></a>
+                            </div>
+                            <div class="feature-box-content">
+                                <a href="https://www.instagram.com/montadordigital/montadordigital/" target="_blank">Instagram</a>
+                            </div>
+                        </div>
+                    
+                        <div class="feature-box d-flex align-items-center gap-2">
+                            <div class="elements-social">
+                                <a href="https://www.youtube.com/@agoramontador" target="_blank"><i class="fa-brands fa-youtube icon-large text-white"></i></a>
+                            </div>
+                            <div class="feature-box-content">
+                                <a href="https://www.youtube.com/@agoramontador" target="_blank">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    
+            <!-- end footer column -->
+          
+            <!-- start footer column -->
+            <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
+                <span class="alt-font d-block text-white mb-5px fw-bold">Soluções</span>
+                <ul>
+                    <li><a href="">Montagem e Desmontagem</a></li>
+                    <li><a href="">Instalação e Manunteção</a></li>
+                    <li class="blink-effect-success"><a href="">Desenvolvimento Profissional para Montadores</a></li>
+                    <li><a href="">Envelopamento de Móveis</a></li>
+                    <li class="blink-effect"><a href="https://www.agoramontador.com.br/cadastro" target="_blank">Cadastre-se</a></li>
+                    <li><a href="">Parceiros</a></li>
+                </ul>
+            </div>
+            <!-- end footer column -->  
+            <!-- start footer column -->
+            <div class="col-7 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-2 order-lg-3">
+                <span class="alt-font d-block text-white mb-5px fw-bold">Sobre</span>
+                <ul>
+                    <li><a href="">Nossa História</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-3 order-lg-4">
+                <span class="alt-font d-block text-white mb-5px fw-bold">Contato</span>
+                <ul>
+                    <div class="phone-effect footer-dark">
+                        <i class="feather icon-feather-phone-call "></i>
+                        <a href="wa.me.com/01519983527288" class="phone-link" style="color:#fff;">(19) 98352-7288</a>
+                    </div>                                       
+                </ul>
+                
+            
+                <br>
+                
+            </div>
+
+         
+            <!-- end footer column -->
+            <!-- start footer column -->
+            <div class="col-7 col-lg-3 col-sm-6 xs-mb-30px last-paragraph-no-margin order-4 order-sm-5 order-lg-5"> 
+                <span class="alt-font d-block text-white mb-5px fw-bold">Endereço</span>
+                <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">Rua Barreto Leme, 855</p>
+                <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">Centro, Campinas, SP</p>
+                13010-201
+            </div>
+                
+            <!-- end footer column -->
+        </div>
+        <br>
+        <div class="footer-bottom position-relative pt-25px pb-25px border-top border-color-light-medium-gray-white-light">                    
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start md-mb-15px"> 
+                    <span class="w-90 sm-w-100 d-inline-block">© Todos os direitos reservados<a href="index.html" target="_blank" class="text-white text-decoration-line-bottom"></a></span>
+                    <br>
+                    <span class="w-90 sm-w-100 d-inline-block">CNPJ: 34.697.204/0001-45 <a class="nav-link"> </a></span>
+                </div>   
+                <div class="col-lg-8 text-center text-lg-end"> 
+                    <ul class="footer-navbar "> 
+                        <li class="nav-item" ><a href="#FAQ" class="nav-link fw-bold" style="color: #fff";>Política de Privacidade</a></li>
+                    <li class="nav-item" style="color: #fff;"><a href="#FAQ" class="nav-link fw-bold" style="color: #fff;">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+   </section>
+   <section class="pt-25px pb-25px fixed-footer border-bottom" style="background-color:#212529; ">
+    <div class="container-fluid"> 
+        <div class="row position-relative border-color-light-medium-gray-white-light ">
+            <div class="col swiper swiper-width-auto text-cente feather-shadow swiper-initialized swiper-horizontal swiper-backface-hidden" data-slider-options="{ &quot;slidesPerView&quot;: &quot;auto&quot;, &quot;spaceBetween&quot;:0, &quot;centeredSlides&quot;: true, &quot;speed&quot;: 8000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:1, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
+                <div class="swiper-wrapper marquee-slide" style="transition-duration: 0ms; transform: translate3d(-250.132px, 0px, 0px); transition-delay: 0ms;" id="swiper-wrapper-8047d10dc402bd9e6" aria-live="off"> 
+                    
+                    
+                    
+                    
+                <div class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 4" data-swiper-slide-index="3">
+                        <div class="fs-20 text-white fw-500">
+                            <a href="https://wa.me/5513997856152?text=Ol%C3%A1%2C%20vim%20por%20meio%20do%20site%20www.alanmontador.com.br%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" class="text-white"><span class="w-10px h-10px border border-2 border-radius-100 border-color-transparent-white-very-light d-inline-block align-middle ms-50px me-50px"></span> 👉 Mensalidade <span style="color: greenyellow">Gratuita</span> até Junho (Novos Montadores Cadastrados)🤩🤝</a>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0">
+                        <div class="fs-20 text-white fw-500">
+                            <a href="https://wa.me/5513997856152?text=Ol%C3%A1%2C%20vim%20por%20meio%20do%20site%20www.alanmontador.com.br%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" class="text-white"><span class="w-10px h-10px border border-2 border-radius-100 border-color-transparent-white-very-light d-inline-block align-middle ms-50px me-50px"></span> Por tempo limitado! Resgate agora! ✅⌛</a>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" data-swiper-slide-index="1">
+                        <div class="fs-20 text-white fw-500">
+                            <a href="https://wa.me/5513997856152?text=Ol%C3%A1%2C%20vim%20por%20meio%20do%20site%20www.alanmontador.com.br%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" class="text-white"><span class="w-10px h-10px border border-2 border-radius-100 border-color-transparent-white-very-light d-inline-block align-middle ms-50px me-50px"></span> 👉 Clique aqui 👈</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 instagram-follow-api position-relative mb-4 sm-mb-30px">
-                    <div class="col instafeed-grid md-mb-30px">
-                        <figure><a href="https://www.instagram.com/montadordigital/" target="_blank"><img src="./images/Instagram/thumb1.jpg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>  
-                    <div class="col instafeed-grid md-mb-30px">
-                        <figure><a href="https://www.instagram.com/montadordigital/" target="_blank"><img src="./images/Instagram/thumb2.jpg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>
-                    <div class="col instafeed-grid md-mb-30px">
-                        <figure><a href="https://www.instagram.com/montadordigital/" target="_blank"><img src="./images/Instagram/thumb3.jpg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>
-                    <div class="col instafeed-grid">
-                        <figure><a href="https://www.instagram.com/montadordigital/" target="_blank"><img src="./images/Instagram/thumb4.jpg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>
-                </div> 
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&src=Y2Fzc2lvby52c0BnbWFpbC5jb20&color=%23039BE5" style="border:solid 1px #777" width="400" height="900" frameborder="0" scrolling="yes"></iframe>
-            </div>
-        </section> 
-   
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </div>
 
-            <!-- start footer -->
-   
-            <!-- start footer -->
-             
-            <footer class=" sm-pt-40px sm-pb-45px footer-dark bg-extra-medium-slate-blue" style="background-image: url(images/demo-footer-pattern.svg)"> 
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <!-- start footer column -->
-                        <div class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-left text-sm-start">
-                            <div class="logo-wrapper d-flex align-items-center justify-content-center">
-                                <a href="" class="footer-logo mb-15px d-block"><img src="images/android-chrome-512x512.png" data-at2x="images/android-chrome-512x512.png" alt="Logo"></a>
-                            </div>
-                            <p class="w-90 sm-w-100 d-inline-block mb-15px">
-                                Montagem de móveis com cuidado, qualidade e montadores qualificados. Garantimos sua satisfação e uma experiência impecável para seu estabelecimento!</p>
-                            
-                        </div>
-                
-                        <!-- end footer column -->
-                      
-                        <!-- start footer column -->
-                        <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-1 order-lg-2">
-                            <span class="alt-font d-block text-white mb-5px">Soluções</span>
-                            <ul>
-                                <li><a href="">Montagem e Desmontagem</a></li>
-                                <li><a href="">Instalação e Manunteção</a></li>
-                                <li class="blink-effect-success"><a href="">Desenvolvimento Profissional para Montadores</a></li>
-                                <li><a href="">Envelopamento de Móveis</a></li>
-                                <li class="blink-effect"><a href="https://www.agoramontador.com.br/cadastro" target="_blank">Cadastre-se</a></li>
-                                <li><a href="">Parceiros</a></li>
-                            </ul>
-                        </div>
-                        <!-- end footer column -->  
-                        <!-- start footer column -->
-                        <div class="col-7 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-2 order-lg-3">
-                            <span class="alt-font d-block text-white mb-5px">Sobre</span>
-                            <ul>
-                                <li><a href="">Nossa História</a></li>
-                                <li><a href="">Trabalhe Conosco</a></li>
-                                <li><a href="">Blog</a></li>
-                            </ul>
-                        </div>
-                        <!-- end footer column -->
-                        <!-- start footer column -->
-                        <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-3 order-lg-4">
-                            <span class="alt-font d-block text-white mb-5px">Contato</span>
-                            <ul>
-                                <div><i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a href="tel:01519983527288" class="text-white">(19)983527288</a></div>
-                            </ul>
-                        
-                            <br>
-                            
-                        </div>
-    
-                     
-                        <!-- end footer column -->
-                        <!-- start footer column -->
-                        <div class="col-7 col-lg-3 col-sm-6 xs-mb-30px last-paragraph-no-margin order-4 order-sm-5 order-lg-5"> 
-                            <span class="alt-font d-block text-white mb-5px">Endereço</span>
-                            <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">Rua Barreto Leme, 855</p>
-                            <p class="w-80 lg-w-100 md-w-70 sm-w-100 mb-10px">Centro, Campinas, SP</p>
-                            13010-201
-                        </div>
-                        
-                        
-                        
-                        <!-- end footer column -->
-                    </div>
-                    <br>
-                    <div class="footer-bottom position-relative pt-25px pb-25px border-top border-color-transparent-white-light">                    
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-center text-lg-start md-mb-15px"> 
-                                <span class="fs-16 fw-500">© Todos os direitos reservados<a href="index.html" target="_blank" class="text-white text-decoration-line-bottom"></a></span>
-                                <br>
-                                <span class="fs-16 fw-500">CNPJ: 34.697.204/0001-45 <a class="nav-link"> </a></span>
-                            </div>   
-                            <div class="col-lg-8 text-center text-lg-end"> 
-                                <ul class="footer-navbar fs-16 fw-500"> 
-                                    <li class="nav-item"><a href="faq.html#FAQ" class="nav-link">Política de Privacidade</a></li>
-                                    <li class="nav-item"><a href="faq.html#FAQ" class="nav-link">Termos de Uso</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                
-            </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let tempoRestante = 600; // Tempo inicial em segundos (10 minutos)
+            let contadorElement = document.getElementById("contador-geral");
+        
+            function atualizarContador() {
+                let minutos = Math.floor(tempoRestante / 60);
+                let segundos = tempoRestante % 60;
+                segundos = segundos < 10 ? "0" + segundos : segundos; // Formata segundos com dois dígitos
+        
+                contadorElement.innerText = `⏳ ${minutos}:${segundos} restantes para a expiração`;
+        
+                if (tempoRestante > 0) {
+                    tempoRestante--;
+                    setTimeout(atualizarContador, 1000);
+                } else {
+                    contadorElement.innerText = "⏳ Oferta Expirada!";
+                    contadorElement.style.color = "red"; // Muda para vermelho quando expira
+                }
+            }
+        
+            atualizarContador();
+        });
+        </script>
+        
+        
+</section>
+</footer>
             <!-- start scroll simple -->
 <div class="scroll-progress scroll-simple d-none d-xl-block">
     <a href="#" class="scroll-top" aria-label="scroll">
@@ -903,5 +939,12 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <!-- jQuery (deve ser carregado primeiro) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Revolution Slider JS -->
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+
     </body>
 </html>

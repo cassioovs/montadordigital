@@ -87,6 +87,7 @@ Table of contents
   100% { opacity: 1; }
 }
 
+
 .blink-effect a {
   animation: fadeBlink 1.8s infinite;
   color: #ffCf19 !important; /* Cor dourada para destaque */
@@ -97,6 +98,403 @@ Table of contents
   color: #66D9EF !important; /* Cor dourada para destaque */
   font-weight: bold;
 }
+
+.phone-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #28a745; /* Verde vibrante */
+  padding: 6px 14px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+  transition: all 0.3s ease-in-out;
+  animation: glow 1.5s infinite alternate;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  overflow: hidden; /* Para a luz não ultrapassar os limites do botão */
+}
+
+/* Efeito hover para um brilho mais intenso */
+.phone-effect:hover {
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.8);
+  transform: scale(1.05);
+}
+
+/* Ícone menor para balancear */
+.phone-effect i {
+  font-size: 14px;
+  color: white;
+}
+
+/* Texto do link */
+.phone-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+/* 🔥 Efeito de luz passando pelo botão */
+.shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  animation: light-move 3s infinite linear;
+}
+
+/* Animação do brilho se movendo */
+@keyframes light-move {
+  0% {
+      left: -100%;
+  }
+  100% {
+      left: 100%;
+  }
+}
+
+/* 🔄 Ajuste da animação de brilho */
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
+  }
+  100% {
+      box-shadow: 0 0 12px rgba(40, 167, 69, 0.7);
+  }
+}
+
+/* 🔄 Responsividade */
+@media (max-width: 768px) {
+  .phone-effect {
+      padding: 4px 10px;
+      font-size: 12px;
+  }
+
+  .phone-effect i {
+      font-size: 12px;
+  }
+
+  .phone-link {
+      font-size: 12px;
+  }
+}
+
+/* MONTADORES EFFECT */
+
+/* Estilização exclusiva para "Montadores Profissionais" */
+.montadores-effect {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #FFD700, #FFB400); /* Gradiente dourado */
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 207, 25, 0.6);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff !important; /* Força a cor branca */
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Garante que o texto continue branco ao clicar, focar ou passar o mouse */
+.montadores-effect:focus,
+.montadores-effect:active,
+.montadores-effect:hover,
+.montadores-effect a,
+.montadores-effect a:focus,
+.montadores-effect a:active,
+.montadores-effect a:hover {
+  color: #fff !important; /* Texto SEMPRE branco */
+  box-shadow: 0 0 15px rgba(255, 207, 25, 0.9);
+  transform: scale(1.05);
+}
+
+/* Remove qualquer cor que venha do Bootstrap no estado "active" */
+.montadores-effect a.nav-link:focus,
+.montadores-effect a.nav-link:active {
+  color: #fff !important;
+}
+
+/* Adiciona o corte diagonal */
+.montadores-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+/* Animação da luz passando */
+.montadores-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  animation: light-move 6s infinite ease-in-out; /* Mudamos de 3s para 6s */
+}
+
+/* 🔄 Animação da luz percorrendo o botão */
+@keyframes light-move {
+  0% {
+      left: -120%;
+  }
+  100% {
+      left: 120%;
+  }
+}
+
+
+/* 🔄 Responsividade para mobile */
+@media (max-width: 768px) {
+  .montadores-effect {
+      padding: 6px 16px;
+      font-size: 12px;
+      height: 36px;
+      line-height: 36px;
+      box-shadow: 0 0 8px rgba(255, 207, 25, 0.5);
+  }
+
+  .montadores-effect::after {
+      width: 12px;
+  }
+
+  .montadores-effect::before {
+      animation-duration: 8s;
+  }
+}
+
+/* BOTÃO DIFERENTE */
+.btn-highlight {
+  display: inline-block;
+  background: linear-gradient(45deg, #FFD700, #FFB400);
+  padding: 12px 24px;
+  border-radius: 50px;
+  box-shadow: 0 0 8px rgba(255, 207, 25, 0.6);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff !important;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Efeito hover */
+.btn-highlight:hover {
+  box-shadow: 0 0 12px rgba(255, 207, 25, 0.9);
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn-highlight {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+/* BOTÃO ESTILO INSTAGRAM COM EFEITO EXCLUSIVO */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  padding: 12px 24px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(220, 39, 67, 0.7); /* Brilho inicial */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff !important;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: pulse-glow 2s infinite alternate; /* Brilho pulsante */
+}
+
+/* Ícone do Instagram */
+.btn-instagram i {
+  margin-right: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito Hover: Zoom no botão + Rotação no Ícone */
+.btn-instagram:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(220, 39, 67, 1); /* Brilho mais forte */
+}
+
+.btn-instagram:hover i {
+  transform: rotate(10deg);
+}
+
+/* 🔥 Animação de brilho pulsante na borda */
+@keyframes pulse-glow {
+  0% {
+      box-shadow: 0 0 10px rgba(220, 39, 67, 0.5);
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(220, 39, 67, 1);
+  }
+}
+
+/* ✨ Animação do gradiente se movendo */
+@keyframes move-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsividade: Ajuste para Mobile */
+@media (max-width: 768px) {
+  .btn-instagram {
+      padding: 10px 20px;
+      font-size: 14px;
+      box-shadow: 0 0 8px rgba(220, 39, 67, 0.5);
+  }
+
+  .btn-instagram i {
+      font-size: 16px;
+  }
+}
+
+/* Instagram */
+/* Ajustando os posts do Instagram */
+.insta-slide {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Define um tamanho fixo para os posts */
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas para um efeito moderno */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajustando as imagens dentro dos slides */
+.insta-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção sem esticar */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Correção para Lazy Loading */
+.insta-slide img.lazy {
+  opacity: 0; /* Evita que a imagem desapareça após o carregamento */
+}
+
+/* Quando a imagem carrega, ela aparece */
+.insta-slide img.loaded {
+  opacity: 1;
+}
+
+.absolute-middle-center {
+  position: relative; /* Para evitar cortes */
+  margin-top: 20px; /* Ajusta a posição */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-instagram {
+  display: flex;
+  flex-direction: column; /* Ícone acima do texto */
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  max-width: 180px;
+  text-align: center;
+}
+
+.btn-instagram i {
+  font-size: 27px; /* Ícone maior */
+  margin-bottom: 3px; /* Reduz o espaço entre ícone e texto */
+}
+
+
+.btn-instagram:hover {
+  transform: scale(1.05);
+}
+
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+  .insta-slide {
+      height: 200px;
+  }
+
+  .btn-instagram {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+.insta-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Garante que o slide ocupe a altura correta */
+}
+
+.insta-image {
+  width: 100%; /* Ajuste conforme necessário */
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* Mantém o aspecto da imagem */
+  border-radius: 10px; /* Arredonda as bordas */
+}
+.insta-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
 
 
 /* ===================================
@@ -136,7 +534,6 @@ section.extra-big-section {
 img {
   max-width: 100%;
   height: auto;
-  height: 40px;
 
 }
 ul li {
@@ -3214,7 +3611,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 }
 .bg-dark-gray,
 .bg-dark-gray:focus {
-  background-color: var(--dark-gray);
+  background-color: #ffcF19;
 }
 .bg-black {
   background-color: var(--black);
@@ -6832,7 +7229,6 @@ header .navbar [class*=col-] .navbar-nav .nav-item {
   display: flex;
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
-  align-self: stretch;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

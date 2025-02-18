@@ -264,7 +264,7 @@ footer ul li {
 }
 @media (max-width: 767px) {
     section, footer {
-        padding-top: 50px;
+        padding-top: 0px;
     }
     .tab-style-04 .nav-tabs .nav-item .nav-link {
         line-height: 35px;
