@@ -93,10 +93,12 @@
             <div class="col-xl-6 col-lg-7 text-center position-relative page-title-extra-large">
                 <div class="d-flex flex-column small-screen">
                     <div class="mt-auto">
-                        <h2 class="mb-10px text-white opacity-7 d-block fw-400 ls-0px">Serviços Rápidos, Seguros e com Garantia</h2>
-                        <h2 class="mb-10px text-white opacity-7 d-block fw-400 ls-0px">Montagens de Móveis</h2>
-                        <h1 class="text-white fw-500 ls-minus-1px mb-0">Transforme Seu Espaço!</h1>
+                        <h2 class="mb-10px text-white d-block fw-400 ls-0px primeiro-h2">Serviços Rápidos, Seguros e com Garantia</h2>
+                        <h2 class="mb-10px text-white opacity-7 d-block fw-400 ls-0px segundo-h2">Montagens de Móveis</h2>
+                        <h1 class="text-white fw-500 ls-minus-1px mb-0 terceiro-h1">Transforme Seu Espaço!</h1>
                     </div>
+              
+                    
                     <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 fs-15 text-white">
                     </div>
                 </div>
@@ -106,37 +108,70 @@
 </section>
 <!-- end page title -->
 
-      <!-- start section -->
-      <section class="position-relative overflow-hidden p-0">
-        <div class="opacity-dark bg-black"></div>
-        <div class="container">
-        </div>
-        <div class="video-container" id="video-wrapper">
-            <iframe id="youtube-video"
-                src="https://www.youtube.com/embed/SEKzN1OFUdc"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<section class="position-relative overflow-hidden p-0">
+    <div class="opacity-dark bg-black"></div>
+    <div class="container"></div>
 
-<!-- jQuery (Necessário para Magnific Popup) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Container do vídeo responsivo -->
+    <div class="video-container" id="video-wrapper">
+        <iframe id="youtube-video"
+            src="https://www.youtube.com/embed/SEKzN1OFUdc"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<!-- Magnific Popup JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
-<script>
-  $(document).ready(function() {
-      $('.popup-youtube').magnificPopup({
-          type: 'iframe'
+    <!-- jQuery (Necessário para Magnific Popup) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+          $('.popup-youtube').magnificPopup({
+              type: 'iframe'
+          });
       });
-  });
-</script>
-<!-- end page title -->
-        <div class="bg-base-color bottom-0px w-100 pt-30px pb-30px">
+    </script>
+</section>
+
+<!-- CSS para deixar o vídeo responsivo -->
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        .video-container {
+            max-width: 100%;
+        }
+    }
+</style>
+
+    
+ </section>
+ <section>
+        <div class="bg-base-color  bottom-0px w-100 pt-30px pb-30px">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-auto md-mb-10px">
@@ -210,7 +245,7 @@
    <!-- Adicione este código dentro do <body> -->
 <!-- Adicione este código dentro do <body> -->
     <!-- Adicione este código dentro do <body> -->
-<section>
+<!-- <section>
     <div class="bg-solitude-blue py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -220,7 +255,7 @@
             </div>
             <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 mt-4">
                 <!-- Processo 1 -->
-                <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box md-mb-50px" onclick="showModal('Agendamento', 'Entre em contato comigo e agende o serviço com antecedência.\n\nAssim, garanto que poderei atender você no dia e horário que melhor se encaixa em nossa agenda')">
+               <!-- <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box md-mb-50px" onclick="showModal('Agendamento', 'Entre em contato comigo e agende o serviço com antecedência.\n\nAssim, garanto que poderei atender você no dia e horário que melhor se encaixa em nossa agenda')">
                     <div class="process-step-icon-box position-relative mb-25px">
                         <div class="d-inline-block position-relative overflow-hidden border-radius-100 progress-image w-180px h-180px">
                             <img src="https://via.placeholder.com/500x500" alt="">
@@ -232,7 +267,7 @@
                 </div>
                 
                 <!-- Processo 2 -->
-                <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box md-mb-50px" onclick="showModal('Orçamento Rápido', 'Envio seu orçamento de forma rápida e prática pelo WhatsApp, sem burocracia')">
+              <!--  <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box md-mb-50px" onclick="showModal('Orçamento Rápido', 'Envio seu orçamento de forma rápida e prática pelo WhatsApp, sem burocracia')">
                     <div class="process-step-icon-box position-relative mb-25px">
                         <div class="d-inline-block position-relative overflow-hidden border-radius-100 progress-image w-180px h-180px">
                             <img src="https://via.placeholder.com/500x500" alt="">
@@ -244,7 +279,7 @@
                 </div>
                 
                 <!-- Processo 3 -->
-                <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box xs-mb-50px" onclick="showModal('Execução do Serviço', 'Eu, ou um de meus profissionais especializados, realizaremos a montagem ou instalação com todo o cuidado, atenção aos detalhes e segurança')">
+               <!-- <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box xs-mb-50px" onclick="showModal('Execução do Serviço', 'Eu, ou um de meus profissionais especializados, realizaremos a montagem ou instalação com todo o cuidado, atenção aos detalhes e segurança')">
                     <div class="process-step-icon-box position-relative mb-25px">
                         <div class="d-inline-block position-relative overflow-hidden border-radius-100 progress-image w-180px h-180px">
                             <img src="https://via.placeholder.com/500x500" alt="">
@@ -256,7 +291,7 @@
                 </div>
                 
                 <!-- Processo 4 -->
-                <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box" onclick="showModal('Garantia', 'Todos os serviços prestados têm 6 meses de garantia para que você possa ficar tranquilo sabendo que estou comprometido com a qualidade')">
+              <!--  <div class="col process-step-style-03 text-center last-paragraph-no-margin hover-box" onclick="showModal('Garantia', 'Todos os serviços prestados têm 6 meses de garantia para que você possa ficar tranquilo sabendo que estou comprometido com a qualidade')">
                     <div class="process-step-icon-box position-relative mb-25px">
                         <div class="d-inline-block position-relative overflow-hidden border-radius-100 progress-image w-180px h-180px">
                             <img src="https://via.placeholder.com/500x500" alt="">
@@ -311,272 +346,178 @@
     });
 </script>
 
+<section style="background-image: url('./images/demo-corporate-bg-02.png">
+    <div class="container background-no-repeat background-position-center-bottom" style="background-image: url('./images/demo-corporate-bg-02.png"> 
+        <div class="row justify-content-center align-items-center mb-2 appear anime-child anime-complete" 
+    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
     
-    
-            <!-- end section -->
-            <!-- start section --> 
-          
-        
-            <!-- end section -->
-              <!-- start section -->
-     
-       <!-- start section --> 
-       <section class="position-relative overflow-hidden"> 
-        <img src="images/demo-real-estate-07.png" alt="" class="position-absolute left-100px top-50px z-index-minus-1" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-180px, 0px, 0px);" />
-        <img src="images/demo-real-estate-08.png" alt="" class="position-absolute right-100px top-100px z-index-minus-1" data-bottom-top="transform:scale(1.4, 1.4) translate3d(0px, 0px, 0px);" data-top-bottom="transform:scale(1, 1) translate3d(-400px, 0px, 0px);" />
-        <div class="container">  
-            
-            <div class="row align-items-center justify-content-center">  
-                <div class="row justify-content-center align-items-center" data-anime='{ "el": "childs", "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="col-4 col-lg-2 col-sm-3 xs-mb-25px">
-                        <div class="swiper rounded-circle" data-slider-options='{ "slidesPerView": 1, "loop": true, "autoplay": { "delay": 1000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/google.png" alt="Avaliacoes Marcelo" />
-                                    </a>
+    <div class="text-center"> <!-- Adicionado text-center aqui -->
+        <div class="text-center">
+            <br>
+            <h3  class="fw-700 text-dark-gray ls-minus-2px sm-ls-minus-1px  lg-w-100">Avaliações</h3>
+            <h6>Veja o que os clientes estão falando</h6>
+       
+        </div>
+
+        <h2 class="alt-font text-dark-gray fw-800 ls-minus-3px mb-5px appear anime-complete" 
+            data-anime="{ &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 100, &quot;staggervalue&quot;: 100, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            5
+        </h2>
+
+        <div class="review-star-icon fs-17 lh-20 d-block appear anime-complete" 
+            data-anime="{ &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 200, &quot;staggervalue&quot;: 100, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+<br>
+        <span class="text-dark-gray fw-500 appear words lines splitting anime-child anime-complete" 
+            data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [15, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 300, &quot;staggervalue&quot;: 100, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+            <span class="d-inline">155 Avaliações</span>
+        </span>
+    </div>
+</div>
+
+        <div class="row mb-3">
+            <div class="col-12 appear anime-complete" data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
+                <div class="swiper slider-one-slide magic-cursor dark swiper-initialized swiper-horizontal swiper-backface-hidden" data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 3000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1400&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                    <div class="swiper-wrapper pt-30px pb-30px" id="swiper-wrapper-9921bde60b3ed2a3" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-2035px, 0px, 0px); transition-delay: 0ms;">
+                        <!-- start review item -->
+                        
+                        <!-- end review item -->
+                        <!-- start review item -->
+                         
+                        <!-- end review item -->
+                        <!-- start review item -->
+                         
+                        <!-- end review item -->
+                        <!-- start review item -->
+                          
+                        <!-- end review item -->
+                        <!-- start review item -->
+                         
+                        <!-- end review item -->
+                        <!-- start review item -->
+                         
+                        <!-- end review item -->
+                    <div class="swiper-slide review-style-07 swiper-slide-next" role="group" aria-label="2 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="1"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color xl-p-10">
+                                <div class="mb-20px ">
+                                    <img src="./images/avaliacoes/1.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Patricia Silvestre</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/1.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/2.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/3.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/4.png" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/5.png" alt=""/>
-                                    </a>
-                                </div> 
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/6.png" alt=""/>
-                                    </a>
-                                </div> 
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/7.png" alt=""/>
-                                    </a>
-                                </div> 
-                                <div class="swiper-slide">
-                                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                        <img src="./images/avaliacoes/8.png" alt=""/>
-                                    </a>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-lg-5 col-xl-4 col-md-6 col-sm-7 text-center text-sm-start">
-                    <h5 class="alt-font text-balh-40 fw-500 ls-minus-1px mb-0 ms-10px lg-ms-0" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>Mais de <span class="fw-700 text-base-color">2,000</span> clientes felizes!</h5>
-                </div>
-                <div class="col-lg-2 col-sm-4 ps-40px md-ps-15px md-mt-35px text-center text-lg-start">
-                    <h2 class="alt-font text-dark-gray fw-700 ls-minus-3px mb-5px" data-anime='{ "translateY": [15, 0], "opacity": [0,1], "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>5</h2>
-                    <div class="review-star-icon fs-17 lh-20 d-block">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <span class="text-dark-gray fw-500">155 Avaliações</span>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-md-10 text-center text-lg-start" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <br>
-                    <span class="text-uppercase fw-600 d-inline-block mb-15px text-base-color">Avaliações de Clientes</span>
-                    <h2 class="alt-font fw-500 text-dark-gray ls-minus-1px">Here is what our <span class="fw-700 d-inline-block">client</span> have to says!</h2>
-                    <div class="swiper position-relative" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "fade" }'>
-                        <div class="swiper-wrapper mb-40px">
-                            <!-- start text slider item -->
-                            <div class="swiper-slide review-style-08">
-                                <p class="w-80 lg-w-100">Love the theme, really neat and super easy to use. But the customer support is what makes this an even greater theme! ThemeZaa solved all the problems. I had with my custom settings.</p>
-                                <div class="mt-20px">
-                                    <img class="rounded-circle w-95px h-95px me-15px" src="https://via.placeholder.com/148x148" alt="">
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray alt-font fs-20"><span class="fw-700">Alexander</span> harvard</div>
-                                        <div class="review-star-icon fs-18">
+                                <p class="mb-15px md-w-85 sm-w-100">"Contratei os serviços do Marcelo devido às ótimas avaliações no Google. Fiz uma pesquisa e também foi o melhor custo/benefício.
+                                    O atendimento foi excelente e muito rápido!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
                                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                         </div> 
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide review-style-08">
-                                <p class="w-80 lg-w-100">I've purchased several themes over the years and this theme, by far is absolutely amazing. It's built extremely well the back end was well thought out the design options are endless.</p>
-                                <div class="mt-20px">
-                                    <img class="rounded-circle w-95px h-95px me-15px" src="https://via.placeholder.com/148x148" alt="">
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray alt-font fs-20"><span class="fw-700">Shoko</span> mugikura</div>
-                                        <div class="review-star-icon fs-18">
+                        </div><div class="swiper-slide review-style-07 bg-base-color bg-hover" role="group" aria-label="3 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="2"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color box-shadow-extra-large xl-p-10">
+                                <div class="mb-20px ">
+                                    <img src="./images/avaliacoes/2.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Graziela Mingati</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
+                                </div>
+                                <p class="mb-15px md-w-85 sm-w-100">"Fiz uma pesquisa e também foi o melhor custo/benefício. O atendimento foi excelente e muito rápido, os móveis ficaram muito bem montados, contratarei em outras oportunidades, com certeza"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
                                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                         </div> 
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide review-style-08">
-                                <p class="w-80 lg-w-100">The theme is very valid and offers many possibilities of customization to adapt it to your needs, but the thing I got the most out of it was the relationship with the support team.</p>
-                                <div class="mt-20px">
-                                    <img class="rounded-circle w-95px h-95px me-15px" src="https://via.placeholder.com/148x148" alt="">
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray alt-font fs-20"><span class="fw-700">Leonel</span> mooney</div>
-                                        <div class="review-star-icon fs-18">
+                        </div><div class="swiper-slide review-style-07" role="group" aria-label="4 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="3"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color box-shadow-extra-large xl-p-10">
+                                <div class="mb-20px ">
+                                    <img src="./images/avaliacoes/3.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Gabi</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
+                                </div>
+                                <p class="mb-15px md-w-85 sm-w-100">"O Marcelo é um ótimo profissional no que faz e também uma pessoa de bom coração. Ele se preocupa e toma cuidado com o móvel e com detalhes na casa (arranhão no piso, sujeira na parede e etc)"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
                                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                         </div> 
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <!-- end text slider item -->
-                        </div> 
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <!-- start slider navigation -->
-                            <div class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 border border-color-extra-medium-gray"><i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i></div>
-                            <div class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 border border-color-extra-medium-gray"><i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i></div>
-                            <!-- end slider navigation --> 
-                        </div>
-                        <br>
-                    </div> 
-                </div>
+                        </div><div class="swiper-slide review-style-07" role="group" aria-label="5 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="4"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color box-shadow-extra-large xl-p-10">
+                                <div class="mb-20px ">
+                                    <img src="./images/avaliacoes/7.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Ivan Gonçalves</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
+                                </div>
+                                <p class="mb-15px md-w-85 sm-w-100">"Marcelo sem dúvida nenhuma foi o melhor montador que já contratei<br><br> Muito educado, atendimento rápido e preciso. tira suas dúvidas na hora. Vai direto nele que é acerto!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="swiper-slide review-style-07 swiper-slide-prev" role="group" aria-label="6 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="5"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color box-shadow-extra-large xl-p-10">
+                                <div class="mb-20px">
+                                    <img src="./images/avaliacoes/5.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Alena Marruaz</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
+                                </div>
+                                <p class="mb-15px md-w-85 sm-w-100">"Já montei 5 moveis com o sr. Marcelo. Ele é um excelente montador, faz tudo com muito capricho,  responsável, atende com agilidade. Recomendo sempre aos meus amigos e conhecidos."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="swiper-slide review-style-07 swiper-slide-active" role="group" aria-label="1 / 6" style="width: 382px; margin-right: 25px;" data-swiper-slide-index="0"> 
+                            <div class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-base-color box-shadow-extra-large xl-p-10">
+                                <div class="mb-20px">
+                                    <img src="./images/avaliacoes/6.png" class="rounded-circle w-60px lg-w-65px me-15px" alt="" data-no-retina="">
+                                    <div class="d-inline-block align-middle"> 
+                                        <div class="text-dark-gray fs-18 fw-600">Alexsander Reis</div>
+                                        <div class="d-inline-block fw-500 text-uppercase border-radius-30px ps-15px pe-15px fs-12 lh-28 bg-dark-info text-white">Google Avaliações</div>
+                                    </div>
+                                </div>
+                                <p class="mb-15px md-w-85 sm-w-100">"O melhor montador, é excelente e super prestativo, pontual, faz o serviço planejado e pensado, resultado perfeito na montagem! Não troco por outro! E o preço é justo e tudo feito com esmero!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block me-auto">
+                                        <div class="text-dark-gray fw-700 float-start fs-15 me-10px">5.0</div>
+                                        <div class="review-star-icon float-start">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>  
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             </div>
         </div>
-    </section>
-    <!-- end section -->
-<!-- start section -->
-<section class="bg-very-light-gray">
-    <div class="container">
-        <br>
-        <div class="row justify-content-center align-items-center" data-anime='{ "el": "childs", "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-            <div class="col-4 col-lg-2 col-sm-3 xs-mb-25px">
-                <div class="swiper rounded-circle" data-slider-options='{ "slidesPerView": 1, "loop": true, "autoplay": { "delay": 1000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/google.png" alt="Avaliacoes Marcelo" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/1.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/2.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/3.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/4.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/5.png" alt=""/>
-                            </a>
-                        </div> 
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/6.png" alt=""/>
-                            </a>
-                        </div> 
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/7.png" alt=""/>
-                            </a>
-                        </div> 
-                        <div class="swiper-slide">
-                            <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                                <img src="./images/avaliacoes/8.png" alt=""/>
-                            </a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-xl-4 col-md-6 col-sm-7 text-center text-sm-start">
-                <h5 class="alt-font text-balh-40 fw-500 ls-minus-1px mb-0 ms-10px lg-ms-0" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>Mais de <span class="fw-700 text-base-color">2,000</span> clientes felizes!</h5>
-            </div>
-            <div class="col-lg-2 col-sm-4 ps-40px md-ps-15px md-mt-35px text-center text-lg-start">
-                <h2 class="alt-font text-dark-gray fw-700 ls-minus-3px mb-5px" data-anime='{ "translateY": [15, 0], "opacity": [0,1], "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>5</h2>
-                <div class="review-star-icon fs-17 lh-20 d-block">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <span class="text-dark-gray fw-500">155 Avaliações</span>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mt-4 sm-mt-40px">
-            <!-- start testimonials item -->
-            <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
-                    <span>"Contratei os serviços do Marcelo devido às ótimas avaliações no Google. Atendimento excelente!"</span>
-                </div>
-                <div class="mt-10px pt-20px pb-20px">
-                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                        <img src="./images/avaliacoes/1.png" class="w-80px h-80px rounded-circle me-15px" alt="" />
-                    </a>
-                    <div class="d-inline-block align-middle lh-20">
-                        <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <span  class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Patricia Silvestre Watanabe</span>
-                        </div>
-                        <span class="fs-15">Google Avaliações</span>
-                    </div>
-                </div>
-            </div>
-            <!-- end testimonials item -->                            
-            <!-- start testimonials item -->
-            <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
-                    <span>"Contratei os serviços do Marcelo devido às ótimas avaliações no Google. Fiz uma pesquisa e também foi o melhor custo/benefício.
-                        O atendimento foi excelente e muito rápido, os móveis ficaram muito bem montados, contratarei em outras oportunidades, com certeza"</span>
-                </div>
-                <div class="mt-10px pt-20px pb-20px">
-                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                        <img src="./images/avaliacoes/2.png" class="w-80px h-80px rounded-circle me-15px" alt="" />
-                    </a>
-                    <div class="d-inline-block align-middle lh-20">
-                        <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <span class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Graziela Mingati</span>
-                        </div>
-                        <span class="fs-15">Google Avaliações</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col testimonials-style-01 md-mb-30px">
-                <div class="position-relative bg-hover bg-base-color testimonial-arrow ps-50px pe-50px pt-30px pb-30px border-radius-10px box-shadow-quadruple-large">
-                    <span>"O Marcelo é um ótimo profissional no que faz e também uma pessoa de bom coração.
-                        Ele se preocupa e toma cuidado com o móvel e com detalhes na casa (arranhão no piso, sujeira na parede e etc). Sempre muito educado e pontual.
-                        Já contratei o serviço dele mais de uma vez e indico sempre pq confio no trabalho e na pessoa.
-                        Vale muito a pena chamar um montador profissional do que “o mais barato” ou tentar fazer sem saber o que tá fazendo…"</span>
-                </div>
-                <div class="mt-10px pt-20px pb-20px">
-                    <a href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">
-                        <img src="./images/avaliacoes/3.png" class="w-80px h-80px rounded-circle me-15px" alt="" />
-                    </a>
-                    <div class="d-inline-block align-middle lh-20">
-                        <div class="fw-500 text-dark-gray alt-font mb-5px">
-                            <span class="fw-bold" href="https://g.page/r/CWOlkiYp0xfhEAE/review" target="_blank">Gabi</span>
-                        </div>
-                        <span class="fs-15">Google Avaliações</span>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <!-- end testimonials item -->
-        </div>
+      
     </div>
 </section>
 
@@ -587,7 +528,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 text-center">
                         <h4 class="alt-font text-white mb-0 fw-300 fancy-text-style-4">Montagem de móveis com
-                            <span class="fw-600" data-fancy-text='{ "effect": "wave", "direction": "down", "string": ["cuidado!", "qualidade!", "montadores qualificados!"], "duration": 3500 }'></span>
+                            <span class="fw-600" data-fancy-text='{ "effect": "wave", "direction": "down", "string": ["cuidado!", "qualidade!", "garantia!"], "duration": 3500 }'></span>
                         </h4> 
                     </div>
                 </div>
@@ -596,21 +537,21 @@
        <!-- Início da Seção -->
 
 
-
         <section class ="accordion-style-06 accordion-item ">
+            <br>
             <div class="container cover-background ">
                 <div class="row align-items-center">
                     <div class="col-lg-6 md-mb-50px appear" data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;rl&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}" style="position: relative;">
                         <figure class="position-relative m-0 md-w-90" style="opacity: 1;">
                             <img src="./images/faq.jpg" class="w-90 border-radius-6px" alt="" data-no-retina="">
-                            <figcaption class="position-absolute bg-dark-gray border-radius-8px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px right-minus-30px w-230px xs-w-210px text-center last-paragraph-no-margin">
-                                <div class="bg-white pt-35px pb-35px border-radius-6px mb-10px">
+                            <figcaption class="position-absolute  border-radius-8px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px right-minus-30px w-230px xs-w-210px text-center last-paragraph-no-margin" style="background-color: #212529;">
+                                <div class="pt-35px pb-35px border-radius-6px mb-10px">
                                     <h1 class="fw-700 ls-minus-2px mb-0" style="color: #fff;">5</h1>
                                     <div class="text-golden-yellow fs-18 ls-1px mb-5px">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     </div>
-                                    <span class="d-block fw-600 ls-minus-05px" style="color: #fff;">3000+ Atendimentos </span>
-                                    <div class="d-inline-block fs-11 text-uppercase bg-green ps-20px pe-20px lh-30 fw-600 text-white border-radius-100px box-shadow-large">Nota excelente</div>
+                                    <span class="d-block fw-600 ls-minus-05px" style="color: #fff;">Responde Rapidamente </span>
+                                    <div class="d-inline-block fs-11 text-uppercase bg-green ps-20px pe-20px lh-30 fw-600 text-white border-radius-100px box-shadow-large">Excelente Suporte</div>
                                 </div>
                             </figcaption>
                         </figure>
@@ -633,7 +574,7 @@
 
     <!-- Lista alinhada à esquerda -->
     <ul class="text-start">
-        <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20"><b>O que você vai encontrar:</b> </span>
+        <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20"><b>Veja o que os clientes estão comentando: </b> </span>
         <br>
         <br>
         <li>Perguntas Frequentes</li>
@@ -642,24 +583,30 @@
         <br>
         <span class="fw-bold text-dark-gray">E muito mais! 😉</span>
     </ul>
+    
 
     <!-- Ênfase no final -->
   
 
 </div>
 
-                <br>
+                
             </div>
+            <br>
         </section>
 
 <!-- Início da Seção -->
 <section class="bg-very-light-gray">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h2 class="fw-700 text-dark-gray ls-minus-2px sm-ls-minus-1px w-90 lg-w-100">Acompanhe os Conteúdos</h2>
+        <div class="justify-content-center">
+            <div class="text-center">
+                <h2 class="fw-700 text-dark-gray ls-minus-2px sm-ls-minus-1px  lg-w-100 text-center">
+            <br>
+                    Acompanhe os Conteúdos
+                </h2>
+                <br>
             </div>
-        </div>
+        </div>        
         <div class="row align-items-center justify-content-center">
             <div class="col-12 text-center">
                 <div class="instagram-follow-api swiper">
