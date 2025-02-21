@@ -120,6 +120,11 @@ Table of contents
   color: #66D9EF !important; /* Cor dourada para destaque */
   font-weight: bold;
 }
+.blink-effect-alert a {
+  animation: fadeBlink 1.8s infinite;
+  color: #00ff43 !important; /* Cor dourada para destaque */
+  font-weight: bold;
+}
 
 .phone-effect {
   display: flex;
@@ -545,9 +550,10 @@ section.half-section {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
 section.big-section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 section.extra-big-section {
   padding-top: 160px;
@@ -649,7 +655,6 @@ h1, .h1 {
 }
 h2, .h2 {
   font-size: 3.438rem;
-  line-height: 3.438rem;
 }
 h3, .h3 {
   font-size: 2.813rem;
@@ -2802,7 +2807,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
     transform: translateY(5px);
   }
   100% {
-    transform: translateY(10px);
+    transform: translateY(px);
   }
 }
 /* Zoom animation */
@@ -3354,6 +3359,9 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   z-index: 999999;
   padding: 40px;
   display: none;
+  background-color: rgb(255 230 128 / 7%); /* Amarelo mais transparente */
+  color: #ffffff;
+
 }
 /* Scroll progress */
 .scroll-progress {
@@ -3633,6 +3641,9 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 }
 .bg-dark-info{
   background-color: #212529;
+}
+.bg-dark{
+  background-color: #191919 !important;
 }
 
 .bg-dark-gray,
@@ -4010,6 +4021,13 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 /* Border color */
 .border-color-base-color {
   border-color: var(--base-color) !important;
+}
+
+.border-color-yellow {
+  border-color: #ffcf19 !important;
+}
+.border-color-green {
+  border-color: #00AF6B !important;
 }
 .border-color-white {
   border-color: var(--white) !important;
@@ -10110,6 +10128,13 @@ button:focus {
   color: #54b783;
   border-color: #cce8b3;
 }
+
+.alert.alert-yellow {
+  background-color: rgb(255 230 128 / 7%); /* Amarelo mais transparente */
+  color: #ffffff;
+  border-color: #ffcf19;
+}
+
 .alert.alert-info {
   background-color: #ebf5f9;
   color: #4278bb;
